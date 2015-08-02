@@ -32,6 +32,8 @@ defmodule Haikunator.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{:array, "~> 1.0.1"}]
+    [{:earmark, "~> 0.1", only: :dev},
+     {:ex_doc, "~> 0.7", only: :dev},
+     {:array, "~> 1.0.1"}]
   end
 end
