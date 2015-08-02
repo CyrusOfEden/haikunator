@@ -32,7 +32,7 @@ Haikunator.build(0) # => "ancient-frost"
 Haikunator.build(9999, ".") # => "frosty.leaf.8347"
 
 # No token, no delimiter
-Haikunator.build(0, " ") # => "twilight breeze"
+Haikunator.build(0, "") # => "twilightbreeze"
 ```
 
 License
