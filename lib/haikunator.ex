@@ -1,9 +1,15 @@
 defmodule Haikunator do
+  @moduledoc """
+  # Haikunator
+
+  Generate Heroku-like memorable random names to use in your apps or anywhere else.
+  """
+
   @adjectives Array.from_list(Application.get_env(:haikunator, :adjectives))
   @nouns Array.from_list(Application.get_env(:haikunator, :nouns))
 
   @doc """
-  Generate Heroku-like memorable random names to use in your apps or anywhere else.
+  Generate a memorable name.
 
   ## Examples
 
