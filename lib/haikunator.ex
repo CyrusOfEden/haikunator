@@ -11,6 +11,12 @@ defmodule Haikunator do
   @doc """
   Generate a memorable name.
 
+  `range` is the first parameter, and sets the range for the token (i.e. the number) from 0 to n.
+  Defaults to `9999`.
+
+  `delimiter` is the second parameter, and it's the string that joins the sections.
+  Defaults to `"-"`.
+
   ## Examples
 
       # Default

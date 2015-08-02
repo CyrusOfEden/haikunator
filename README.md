@@ -1,4 +1,4 @@
-Haikunator [![Build Status](https://travis-ci.org/knrz/Haikunator.svg?branch=master)](https://travis-ci.org/knrz/Haikunator)
+Haikunator [![Build Status](https://travis-ci.org/knrz/Haikunator.svg?branch=master)](https://travis-ci.org/knrz/Haikunator) [![Inline docs](http://inch-ci.org/github/knrz/Haikunator.svg?branch=master)](http://inch-ci.org/github/knrz/Haikunator)
 ==========
 
 Generate Heroku-like memorable random names to use in your apps or anywhere else.
