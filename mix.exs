@@ -3,11 +3,16 @@ defmodule Haikunator.Mixfile do
 
   def project do
     [app: :haikunator,
+     description: "Generate Heroku-like memorable random names to use in your apps or anywhere else.",
      version: "1.0.0",
      elixir: "~> 1.0",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps,
+     package: [contributors: ["Kash Nouroozi"],
+               licenses: ["MIT"],
+               links: %{"GitHub" => "https://github.com/knrz/Haikunator"}
+    ]]
   end
 
   # Configuration for the OTP application
