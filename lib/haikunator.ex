@@ -5,8 +5,8 @@ defmodule Haikunator do
   Generate Heroku-like memorable random names to use in your apps or anywhere else.
   """
 
-  @adjectives Array.from_list(Application.get_env(:haikunator, :adjectives))
-  @nouns Array.from_list(Application.get_env(:haikunator, :nouns))
+  @adjectives Application.get_env(:haikunator, :adjectives)
+  @nouns Application.get_env(:haikunator, :nouns)
 
   @doc """
   Generate a memorable name.
@@ -49,5 +49,6 @@ defmodule Haikunator do
   defp random(range) when range > 0, do: :random.uniform(range)
 
   @spec sample([any]) :: any
-  defp sample(array), do: array[random(Array.size(array) - 1)]
+  defp sample(array), do: Enum.random(array)
+  
 end
