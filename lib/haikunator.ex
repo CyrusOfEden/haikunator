@@ -36,7 +36,7 @@ defmodule Haikunator do
   """
   @spec build(integer, String.t) :: String.t
   def build(range \\ 9999, delimiter \\ "-") do
-    :random.seed(:os.timestamp)
+    :rand.seed(:exsplus)
     token = if range > 0, do: random(range)
 
     [@adjectives, @nouns]
@@ -46,9 +46,8 @@ defmodule Haikunator do
   end
 
   @spec random(integer) :: integer
-  defp random(range) when range > 0, do: :random.uniform(range)
+  defp random(range) when range > 0, do: :rand.uniform(range)
 
   @spec sample([any]) :: any
   defp sample(array), do: Enum.random(array)
-  
 end
