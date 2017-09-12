@@ -12,7 +12,7 @@ defmodule Haikunator.Mixfile do
      package: [maintainers: ["Kash Nouroozi"],
                licenses: ["MIT"],
                links: %{"GitHub" => "https://github.com/knrz/Haikunator"},
-               files: [ "mix.exs","lib", "config" ]
+               files: [ "mix.exs","lib", "config/adjectives.exs", "config/nouns.exs" ]
     ]]
   end
 
